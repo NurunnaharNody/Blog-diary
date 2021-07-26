@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1160px;
+    margin: auto;
+}
+
+/* --------------navbar------------ */
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.nav-menu li{
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    font-size: 18px;
+   
+}
+ .menu-name{
+    color: #3F3F3F;
+    font-weight: bolder;
+    font-family: 'Anton', sans-serif;
+}
+
+/* ----------header section ---------------- */
+.header-back{
+    background: url(Rectangle\ 2.png);
+    
+}
+.header-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+   
+.header-image img{
+    width: 100%;
+    padding: 40px;
+}
+.header-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;
+}
+.header-info h1{
+    color: #FFFFFF;
+    font-size: 28px;
+}
+.header-info p{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.header-links{
+    display: flex;
+    align-items: center;
+}
+.header-links h4{
+    background: #FFFDFD;
+    border: 10px solid #FFFFFF;
+    color: #FFB800;
+    margin-top: 15px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+.header-links h5{
+    background: black;
+    border: 10px solid black;
+    color: #FFB800;
+    margin-top: 15px;
+    border-radius: 25px;
+}
+/*------------- main section style -------------- */
+
+.title h2{
+    font-weight:bolder;
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 50px;
+
+}
+.blogs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: auto;
+}
+.blog{
+    cursor: pointer;
+   margin: 10px 20px;
+   overflow: hidden;
+   width: 250px;
+   box-shadow:0 10px 20px rgba(0, 0, 0, 0.02);
+   border: 1px solid rgba(199, 199, 199, 0.514);
+    border-radius: 5px;
+}
+.blog:hover {
+    box-shadow:10px 10px 10px rgba(0, 0, 0, 0.185);
+}
+.blog-image img{
+    width:100%;
+}
+.blog-info{
+    text-align: center;
+}
+ .blog-info h2{
+     font-weight: 700;
+     font-size: 24px;
+     padding: 2px;
+ }
+ .blog-info p{
+     font-size: 16px;
+     padding: 3px;
+ }
+ .blog-info h4{
+     background: crimson;
+    border: 1px solid;
+   margin:10px 0px 20px 70px;
+    color: #FFB800;
+    width: 100px;
+    border-radius: 25px;
+ }
+ /* -------------projects styles----------- */
+ .projects{
+     display: flex;
+     justify-content:center;
+     align-items: center;
+ }
+ .project-image img{
+     width: 100%;
+     padding: 8px;
+ }
+ /* ---------view -------- */
+ .view{
+     justify-content: center;
+     display: flex;
+     padding-top: 30px;
+ }
+ .view h4{
+    color: #FFB800;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    background: #FFFDFD;
+    border: 2px solid #ffb7007c;
+    border-radius: 25px;
+    padding: 3px 25px;
+}
+
+/* -----form section ----------- */
+
+.form-title{
+     display: flex;
+    padding-top: 50px;
+    overflow: hidden;
+}
+.form-title h1{
+    font-size: 60px;
+    line-height: 88px;
+    color: white;
+    background: #FFB800;
+    height: 168px;
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.form-section{
+    background: #2A2A2A;
+    margin-top: 100px;
+}
+form{
+    background: #2A2A2A;
+    height:500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.message{
+    resize: none;
+    height: 100px;
+}
+.inputs input{
+    background: #C4C4C4;
+    border-radius: 10px;
+    border:1px solid;
+    padding: 5px 30px;
+    margin: 10px;
+    text-align: start;
+}
+.inputs button{
+      margin-left: 100px;
+      background: crimson;
+      border-radius: 10px;
+      border:5px solid crimson;
+      color: ghostwhite;
+}
+footer h6{
+    text-align: center;
+}
+/* -----------------media queries for responsive site ----------- */
+@media screen and (max-width:1440px){
+     .container{
+         width:90%;
+         margin:auto;
+        }
+}
+@media screen and (max-width:1024px){
+    .container{
+        width:90%;
+        margin:auto;
+       }
+       .header-section{
+           flex-direction:column;
+
+       }
+}
+@media screen and (max-width:768px){
+    
+       .header-section{
+           flex-direction:column;
+
+       }
+      
+      .form-title h1{
+           height: 250PX;
+      }
+}
+
